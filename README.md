@@ -28,7 +28,8 @@ Example 2
 ```
 python natural_numbers_interpretation.py -f phonenumbers.txt -m a
 ```
-Example 3 
+Example 3  
+
 <img src = images/cmd.JPG width=400><br />
 If no input via the command line is provided, the application will ask the user for providing with a phone number.
 Acceptable inputs are sequences of numbers sperated by a space character. Each sequence must be at most a 3 digit number. If the user provides input that violates this rules, the input will not be processed.
