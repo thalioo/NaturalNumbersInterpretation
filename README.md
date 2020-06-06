@@ -88,6 +88,7 @@ Which produce the following output :
 <img src = images/tests.JPG width=400><br />
 The test module for the above cases passes. We chose these cases carefully, as they contain some peculiarites. We prove that all zeroes sequence does not expand ore merge. Also in the second use case we can merge three sequences (200 20 3 => 223), and prove that it allso works correctly. In general the various inputs we tested all produced the correct result.
 We also ran more tests that had more complex output but were not validated automatically.
-# Python
-This application was implemented using the Anaconda distribution of python 3.7 and conda 4.8.2
 [^3]:We did not perform unit test for the input, as it is out of the scope of this assignment.
+# Python
+This application was implemented using the Anaconda distribution of python 3.7 and conda 4.8.2. In our source files we have included numpydocstring comments as documentation of the crucial files.
+
