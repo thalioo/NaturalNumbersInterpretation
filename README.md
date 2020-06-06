@@ -82,7 +82,8 @@ The test cases we reproduced are the following input numbers:
 * "0 0 30 69 700 24 1 3 50 2"
 * "200 20 3 710 4 5"
 * "2 10 69 30 6 6 4"
-* "214 65 2 000 1"
+* "214 65 2 000 1"  
+
 Which produce the following output :  
 
 <img src = images/tests.JPG width=400><br />
