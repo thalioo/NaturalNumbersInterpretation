@@ -69,6 +69,7 @@ Given the fact that the input sequences are at most triplets (i.e., a sequence c
     * if the sequence contains the digit `0' once, it spawns at most one new interpretation (see 2-digit case);
 After having the shortest version of the input sequence (after the initial merge) we can compute the total number of possible interpretations.
 Let $e_1$ be the number of different sequences that cannot be expanded; $e_2$ be the number of different 2-digits and 3-digits sequences that spawns one new interpretations; and $e_3$ be the number of different 3-digits sequences that spawns three new interpretations. The total number of interpretations is equal to:  
+<img src="https://render.githubusercontent.com/render/math?math=(2^{e_1 \cdot0})\cdot(2^{e_2 \cdot 1})\cdot(2^{e_3 \cdot2})">
 total_interpretations = $(2^{e_1 \cdot0})\cdot(2^{e_2 \cdot 1})\cdot(2^{e_3 \cdot2})$
 ## Unit Testing
 In order to test the performance of our application we provide Unit Test results. This has been achieved by using python's standard built in library _unittest_. We have implemented the unit tests in the _tests_ folder of our project. To run these test one can navigate in the corresponding folder and input the following:
