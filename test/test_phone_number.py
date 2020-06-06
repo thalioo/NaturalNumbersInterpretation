@@ -1,6 +1,7 @@
 import unittest
+import sys,os
+sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/../src")
 from phone_number import PhoneNumber
-
 
 class TestPhoneNumber(unittest.TestCase):
     def setUp(self):
