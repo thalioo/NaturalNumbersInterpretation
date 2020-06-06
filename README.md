@@ -58,6 +58,17 @@ More particular:
 3) To find all the possible combinations of the interpretations, we compute the cartesian product of each expanded result[^2].
 [^1]:x0,00,x00,0x0,00x,0x,x,11,12 dont expand in greek pronunciation.
 [^2]: We get the unique values, as the cartesian product contains duplicates.
+####Number of Interpretations
+Given the fact that the input sequences are at most triplets (i.e., a sequence contains an at least 3-digit number) we have the following:
+* 1-digit sequence cannot expand;
+* 2-digits sequence spawns at most one new interpretation
+    * if the sequence contains the digit `0' it cannot be expanded;
+* 3-digits sequence spawns at most three new interpretations
+    * if the sequence contains the digit `0' twice, it cannot be expanded;
+    * if the sequence contains the digit `0' once, it spawns at most one new interpretation (see 2-digit case);
+After having the shortest version of the input sequence (after the initial merge) we can compute the total number of possible interpretations.
+Let $e_1$ be the number of different sequences that cannot be expanded; $e_2$ be the number of different 2-digits and 3-digits sequences that spawns one new interpretations; and $e_3$ be the number of different 3-digits sequences that spawns three new interpretations. The total number of interpretations is equal to: \n
+ total_interpretations = $(2^{e_1 \cdot0})\cdot(2^{e_2 \cdot 1})\cdot(2^{e_3 \cdot2})$
 ## Unit Testing
 In order to test the performance of our application we provide Unit Test results. This has been achieved by using python's standard built in library _unittest_. We have implemented the unit tests in the _tests_ folder of our project. To run these test one can navigate in the corresponding folder and input the following:
 ```
